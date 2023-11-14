@@ -1,0 +1,9 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.extraPaths": [
+        "./ChatterBot",
+        "./ChatterBot-1.0.8/chatterbot",
+        "./ChatterBot-1.0.8"
+    ]
+}

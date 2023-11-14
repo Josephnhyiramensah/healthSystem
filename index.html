@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+  
+<div class="main-container">
+  <form action="process_registration.php"  method="POST" enctype="multipart/form-data">
+    <div class="sub-container">
+
+      <div class="camera-registration-container">
+        <div class="Registration-date-time">
+          <p>Registration Date & Time</p>
+          <label>Date: 
+            <input type="date" name="registration_date" id="registratioon_date" required>
+          </label>
+
+          <label>Time:
+            <input type="time" name="registration_time" id="registration_time" required>
+          </label>
+        </div>
+
+         <div class="camera"> 
+          <p>Take your passport </p>
+          <div id="video-container">
+            <video id="video" width="300" height="255" autoplay></video>
+            <img id="captured-image" style="display: none;">
+            <button id="capture-button">Capture Passport</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+          </div> 
+        </div>
+      </div>
+
+      <div class="patient-info">
+        <h3>Patient Info</h3>
+        <label>Full Name:
+          <input type="text" name="fullname" required autocomplete="off"> 
+        </label> 
+
+        <label>Health ID:
+          <input type="text" name="id">
+        </label>
+
+        <label> Date Of Birth:
+          <input type="date" name="date_of_birth" autocomplete="off">
+        </label>
+
+        <label>Phone Number:
+          <input type="number" name="phone_number" required>
+        </label>
+<div class="marital-gender">
+
+        <label> Marital Status:
+          <select name="marital_status hidden">
+            <option value="single" name="answer">single</option>  
+            <option value="married">Married</option>  
+            <option value="devorce">Devorce</option>  
+            <option value="Widowed">Widowed</option>   
+          </select>
+        </label>
+                <div class="gender hidden">
+        <label>Gender:</label> 
+        <label for=""> Male</label> <input type="radio" name="answer"/>
+        <label for="">Female </label>   <input type="radio" name="answer"/>
+        <label for="">Other  </label><input type="radio" name="answer"/>
+      </div>
+      </div>
+      <!-- <div class="mail-section"> -->
+        <label>E-mail:
+          <input type="email" name="email" required autocomplete="off">   
+        </label>
+
+        <label> Password:
+          <input type="password" name="password1" required autocomplete="off"> 
+        </label>
+
+        <label>Confirm Password:
+          <input type="password" name="conpassword" required autocomplete="off"> 
+        </label>
+
+        <label> Home Address:
+          <textarea name="home_address"  cols="40" rows="5" value="home_address"  ></textarea>
+        </label>
+
+        <label>Occupation:
+          <input type="text" name="occupation" required autocomplete="off">
+        </label>
+
+        <label class="yes-no"> Is the person younger than 18?
+          <input type="radio" name="okay" id="yes" value="yes"> <label for="yes">Yes</label>
+          <input type="radio" name="okay" id="no" value="no"> <label for="no">No</label>  
+        </label>
+
+        <label class="yes-no"> Taking medication currently?
+          <input type="radio" name="yes-no" id="yes" value="yes"> <label for="yes">Yes</label>
+          <input type="radio" name="yes-no" id="no" vlue="no"> <label for="no">No</label>
+        </label>
+
+        <label> Describe your health issue:
+          <textarea name="health_issue" id="health_issue" cols="40" rows="5" required></textarea>
+        </label>
+
+        <label>Next Of Kins Name:
+          <input type="text" name="next_of_kins_name" id="next_of_kins_name" required>
+        </label>
+
+        <label>Next Of Kins phone Number:
+          <input type="number" name="next_of_kins_number" id="next_of_kins_number" required>
+        </label>
+
+        <label>Health Insurance ID:
+          <input type="text" name="health_insurance_id" required auto complete="off">
+        </label>
+
+        <label >Health Insurance Number:
+          <input type="number" name="health_insurance_number" required auto complete="off">
+        </label>
+      <!-- </div> -->
+    </div>
+      <button type="submit" class="registerbtn">Register</button>
+
+    </div>
+  </form>
+</div>
+
+<script src="camera.js"></script>
+</body>
+</html>

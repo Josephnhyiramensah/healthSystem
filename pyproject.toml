@@ -1,0 +1,21 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Josephnhyiramensah", email = "139984393+Josephnhyiramensah@users.noreply.github.com"},
+]
+dependencies = [
+    "chatterbot>=1.0.5",
+    "flask>=3.0.0",
+    "spacy>=2.1.9",
+    "flask-bcrypt>=1.0.1",
+    "flask-login>=0.6.3",
+    "flask-sqlalchemy>=2.5.1",
+    "blis>=0.2.4",
+    "nltk>=3.8.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
